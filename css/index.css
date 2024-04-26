@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    /* background-image: linear-gradient(135deg, #5EFCE8 10%, #736EFE 100%); */
+    /* background-image: linear-gradient(135deg, #FF6FD8 10%, #3813C2 100%); */
+    /* background-image: linear-gradient(135deg, #cc208e 10%, #6713d2 100%); */
+    /* background-image: linear-gradient(135deg, #00dbde 10%, #fc00ff 100%); */
+    /* background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%); */
+
+    background-image: linear-gradient(135deg, #EEAD92 10%, #6018DC 100%);
+    /* background-image: linear-gradient(135deg, #e14fad 10%, #f9d423 100%); */
+    scrollbar-width: none;
+}
+
+nav {
+    background-image: linear-gradient(135deg, #8d2de26b 10%, #4b00e049 100%);
+}
+
+.first {
+    margin: 70px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+/* .card {
+height: 25.3rem;        It is creating prblm with testimonials card.
+width: 24.5rem;
+} */
+
+/* .shadowbox:hover{} */
+.shadowbox {
+    box-shadow: 9px 9px 16px 4px rgba(0, 0, 0, 0.783);
+}
+
+.shadowbox:hover {}
+
+/* .shadowbox {
+position: relative;
+}
+.shadowbox::after {
+content: "";
+position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+background: linear-gradient(45deg, blue, red);
+filter: blur(10px);
+z-index: -1;
+} */
+
+#card1 {
+    background-image: linear-gradient(135deg, #81FFEF 10%, #F067B4 100%);
+}
+
+#card2 {
+    background-color: #dba5ea;
+}
+
+#card3 {
+    background-image: linear-gradient(135deg, #F0FF00 10%, #58CFFB 100%);
+}
+
+#card4 {
+    background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+}
+
+#card5 {
+    background-image: linear-gradient(135deg, #FFF886 10%, #F072B6 100%);
+}
+
+#card6 {
+    background-image: linear-gradient(135deg, #df89b5 10%, #bfd9fe 100%);
+}
+
+#lastcard {
+    background-image: linear-gradient(135deg, #6a11cb 10%, #2575fc 100%);
+    width: 60vw;
+    height: 18.5rem;
+    margin: 50px 10px 0px 10px;
+}
+
+#carding {
+    /* border: 2px solid white; */
+    width: auto;
+    justify-content: space-around;
+}
+
+.col {
+    /* border: 2px solid red; */
+    margin: 25px 10px;
+    width: 25rem;
+}
+
+/* Feedback section */
+.feedback {
+    /* border: 1px solid blue; */
+    width: 100vw;
+    margin: 0px;
+    padding: 45px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback h6 {
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.feedback h5 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.testimonial {
+    width: 60vw;
+    margin: 5px;
+    /* border: 1px solid black; */
+}
+
+@media screen and (max-width:810px) {
+    .testimonial {
+        width: 100vw;
+    }
+}
+
+
+/* footer */
+footer {
+    height: auto;
+    background-color: black;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot1,
+.foot2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.foot3 {
+    padding: 9px;
+}
+
+/* media Query for cards in mobile */
+@media screen and (max-width:922px) {
+    .col {
+        /* border: 2px solid red; */
+        margin: 25px 5px;
+        width: 22rem;
+    }
+
+    /* .card {
+height: 25.3rem;
+width: 21.5rem;
+} */
+}

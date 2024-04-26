@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best company to provide the AI-boat,Customize the Chat-Boat">
+    <meta name="author" content="Heera Rana">
+    <meta name="keyword" content="AI-boat,Customizable boat">
+    <title>Technical Chromium</title>
+    <link rel="icon" href="images/Layer_2_(5)-transformed-modified.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <!-- Bootstrap Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: #2699d6;font-weight: bold; text-shadow: 1px 1px 2px black;"><img
+                        src="images/Layer_2_(5)-transformed.png" height="55px"
+                        style="border-radius: 30px;border: 2px solid #2699d6;">Technical Chromium</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  nav-underline" style="margin: auto 250px;"> <!-- Margin gived-->
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" data-bs-theme="dark">
+                                <form class="p-2 mb-2 bg-body-tertiary border-bottom">
+                                    <input type="search" class="form-control" autocomplete="false" placeholder="Type to filter...">
+                                  </form>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                                    AI News
+                                  </a></li>
+                                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                                    AI Software
+                                  </a></li>
+                                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                                    AI Updates
+                                  </a></li>
+                                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                                    AI Tools
+                                  </a></li>
+                                  <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <span class="d-inline-block bg-warning rounded-circle p-1"></span>
+                                    New AI-Products
+                                  </a></li>
+                                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <span class="d-inline-block bg-secondary rounded-circle p-1"></span>
+                                    AI in wearables
+                                  </a></li>
+                                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                    <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                                    AI Enabled Electronics
+                                  </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="myAnchor" class="nav-link" style="color: white;" aria-disabled="true">ContactUs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex " role="search" data-bs-theme="dark">
+                      <input class="form-control me-2" id="searchBox" type="text" placeholder="Search..." aria-label="Search">
+                        <!-- <button class="btn mx-0" type="submit"><img src="images/search1.png" height="30px" alt=""></button> -->
+                    </form>
+
+                    <div class="mx-2">
+                        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#loginModal" type="submit" style="margin: 7px; background-color: lightcoral; color: white;box-shadow:4px 4px 5px 1px rgba(0, 0, 0, 0.790);">Login</button>
+                        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#signUpModal" type="submit" style="background-color: lightcoral; color: white;box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.790);">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+  
+<!-- Search Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: #6a11cb;">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <input class="form-control me-2" id="searching" type="text" placeholder="Search..." aria-label="Search">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Login Modal -->
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <!-- Login form -->
+        <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <a href="" class="forget text-decoration-none text-body-secondary">Forget password ?</a>
+            <div class="submit d-flex justify-content-end">
+                <button type="submit" class="btn btn-success rounded-5">Sign in</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-start py-1">
+                        <p class="newuser">New User?<a href="" data-bs-toggle="modal" data-bs-target="#signUpModal">SignUp</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--signUp Modal -->
+  <div class="modal fade modal-lg" id="signUpModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signUpModalLabel">SignUp</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- SignUp Form -->
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name*" aria-label="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name">
+                </div>
+                <div class="col-md-7">
+                    <!-- <label for="inputEmail4" class="form-label">Email</label> -->
+                    <input type="email" placeholder="Email address*" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <!-- <label for="inputPassword4" class="form-label">Password</label> -->
+                    <input type="password" placeholder="Create password*" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-md-6">
+                    <!-- <label for="inputPassword4" class="form-label">Password</label> -->
+                    <input type="password" placeholder="Confirm password*" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-md-4">
+                    <!-- <label for="inputState" class="form-label">Country</label> -->
+                    <select id="inputState" class="form-select">
+                      <option default>Country</option>
+                        <option>Afghanistan</option>
+                        <option>Armenia</option>
+                        <option>Australia</option>
+                        <option>Austria</option>
+                        <option>Azerbaijan</option>
+                        <option>Bahrain</option>
+                        <option>Bangladesh</option>
+                        <option>Belgium</option>
+                        <option>Bhutan</option>
+                        <option>Brunei</option>
+                        <option>Cambodia</option>
+                        <option>Canada</option>
+                        <option>Chile</option>
+                        <option>China</option>
+                        <option>Croatia</option>
+                        <option>Cyprus</option>
+                        <option>Czech Republic</option>
+                        <option>Denmark</option>
+                        <option>Estonia</option>
+                        <option>Finland</option>
+                        <option>France</option>
+                        <option>Georgia</option>
+                        <option>Germany</option>
+                        <option>Hong Kong SAR</option>
+                        <option>Hungary</option>
+                        <option>Iceland</option>
+                        <option>India</option>
+                        <option>Indonesia</option>
+                        <option>Iran</option>
+                        <option>Iraq</option>
+                        <option>Ireland</option>
+                        <option>Israel</option>
+                        <option>Italy</option>
+                        <option>Japan</option>
+                        <option>Jordan</option>
+                        <option>Kazakhstan</option>
+                        <option>Korea Rep.</option>
+                        <option>Kuwait</option>
+                        <option>Kyrgyzstan</option>
+                        <option>Laos</option>
+                        <option>Latvia</option>
+                        <option>Lebanon</option>
+                        <option>Lithuania</option>
+                        <option>Luxembourg</option>
+                        <option>Malaysia</option>
+                        <option>Maldives</option>
+                        <option>Mongolia</option>
+                        <option>Myanmar</option>
+                        <option>Nepal</option>
+                        <option>Netherlands</option>
+                        <option>New Zealand</option>
+                        <option>North Korea</option>
+                        <option>Norway</option>
+                        <option>Oman</option>
+                        <option>Pakistan</option>
+                        <option>Palestine</option>
+                        <option>Philippines</option>
+                        <option>Poland</option>
+                        <option>Portugal</option>
+                        <option>Qatar</option>
+                        <option>Romania</option>
+                        <option>Russia</option>
+                        <option>Saudi Arabia</option>
+                        <option>Singapore</option>
+                        <option>Slovak Republic</option>
+                        <option>Slovenia</option>
+                        <option>South Korea</option>
+                        <option>Spain</option>
+                        <option>Sri Lanka</option>
+                        <option>Sweden</option>
+                        <option>Switzerland</option>
+                        <option>Syria</option>
+                        <option>Taiwan</option>
+                        <option>Taiwan, China</option>
+                        <option>Tajikistan</option>
+                        <option>Thailand</option>
+                        <option>Timor-Leste</option>
+                        <option>Turkey</option>
+                        <option>Turkmenistan</option>
+                        <option>UAE</option>
+                        <option>UK</option>
+                        <option>USA</option>
+                        <option>Uzbekistan</option>
+                        <option>Vietnam</option>
+                        <option>Yemen</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" style="font-size: small;" for="gridCheck">
+                        I accept the <a class="text-decoration-none" href="">Terms of Use</a> and <a class="text-decoration-none" href="">Privacy Policy.</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success rounded-5">SignUp</button>
+                  </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--ContactUS Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name*" aria-label="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name">
+                </div>
+                <div class="col-md-7">
+                    <!-- <label for="inputEmail4" class="form-label">Email</label> -->
+                    <input type="email" placeholder="Email address*" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <!-- <label for="inputState" class="form-label">Country</label> -->
+                    <select id="inputState" class="form-select">
+                      <option default>Country</option>
+                        <option>Afghanistan</option>
+                        <option>Armenia</option>
+                        <option>Australia</option>
+                        <option>Austria</option>
+                        <option>Azerbaijan</option>
+                        <option>Bahrain</option>
+                        <option>Bangladesh</option>
+                        <option>Belgium</option>
+                        <option>Bhutan</option>
+                        <option>Brunei</option>
+                        <option>Cambodia</option>
+                        <option>Canada</option>
+                        <option>Chile</option>
+                        <option>China</option>
+                        <option>Croatia</option>
+                        <option>Cyprus</option>
+                        <option>Czech Republic</option>
+                        <option>Denmark</option>
+                        <option>Estonia</option>
+                        <option>Finland</option>
+                        <option>France</option>
+                        <option>Georgia</option>
+                        <option>Germany</option>
+                        <option>Hong Kong SAR</option>
+                        <option>Hungary</option>
+                        <option>Iceland</option>
+                        <option>India</option>
+                        <option>Indonesia</option>
+                        <option>Iran</option>
+                        <option>Iraq</option>
+                        <option>Ireland</option>
+                        <option>Israel</option>
+                        <option>Italy</option>
+                        <option>Japan</option>
+                        <option>Jordan</option>
+                        <option>Kazakhstan</option>
+                        <option>Korea Rep.</option>
+                        <option>Kuwait</option>
+                        <option>Kyrgyzstan</option>
+                        <option>Laos</option>
+                        <option>Latvia</option>
+                        <option>Lebanon</option>
+                        <option>Lithuania</option>
+                        <option>Luxembourg</option>
+                        <option>Malaysia</option>
+                        <option>Maldives</option>
+                        <option>Mongolia</option>
+                        <option>Myanmar</option>
+                        <option>Nepal</option>
+                        <option>Netherlands</option>
+                        <option>New Zealand</option>
+                        <option>North Korea</option>
+                        <option>Norway</option>
+                        <option>Oman</option>
+                        <option>Pakistan</option>
+                        <option>Palestine</option>
+                        <option>Philippines</option>
+                        <option>Poland</option>
+                        <option>Portugal</option>
+                        <option>Qatar</option>
+                        <option>Romania</option>
+                        <option>Russia</option>
+                        <option>Saudi Arabia</option>
+                        <option>Singapore</option>
+                        <option>Slovak Republic</option>
+                        <option>Slovenia</option>
+                        <option>South Korea</option>
+                        <option>Spain</option>
+                        <option>Sri Lanka</option>
+                        <option>Sweden</option>
+                        <option>Switzerland</option>
+                        <option>Syria</option>
+                        <option>Taiwan</option>
+                        <option>Taiwan, China</option>
+                        <option>Tajikistan</option>
+                        <option>Thailand</option>
+                        <option>Timor-Leste</option>
+                        <option>Turkey</option>
+                        <option>Turkmenistan</option>
+                        <option>UAE</option>
+                        <option>UK</option>
+                        <option>USA</option>
+                        <option>Uzbekistan</option>
+                        <option>Vietnam</option>
+                        <option>Yemen</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea type="text" class="w-100 h-40" placeholder="Enter your message"></textarea>
+                  </div>
+                  <div class="modal-footer py-1 d-flex justify-content-center">
+                    <!-- <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button> -->
+                    <button type="submit" class="btn btn-success rounded-5 w-100">Send message</button>
+                  </div>
+            </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>  
+    </header>
+<main>
+        <!-- Crousel -->
+        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel"> <!--inactive carousel-fade-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/desktop (new).jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to Technical Chromium</h5>
+                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                        <a href="newspage.html"><button class="btn btn-primary">Computers</button></a>
+                        <a href="newspage3.html"><button class="btn btn-danger">AI Tools</button></a>
+                        <a href="newspage2.html"><button class="btn btn-success">SmartPhone</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/companyoffice(new).jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to Technical Chromium</h5>
+                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                        <a href="newspage.html"><button class="btn btn-primary">Computers</button></a>
+                        <a href="newspage3.html"><button class="btn btn-danger">AI Tools</button></a>
+                        <a href="newspage2.html"><button class="btn btn-success">SmartPhone</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/crousel-4(new).jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to Technical Chromium</h5>
+                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                        <a href="newspage.html"><button class="btn btn-primary">Computers</button></a>
+                        <a href="newspage3.html"><button class="btn btn-danger">AI Tools</button></a>
+                        <a href="newspage2.html"><button class="btn btn-success">SmartPhone</button></a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- cards -->
+        <div class="first">
+            <div id="carding" class="row row-cols-1 row-cols-md-2 g-1">
+                <div class="col rounded-4 p-0">
+                    <div id="card1" class="card rounded-4 p-0 shadowbox">
+                        <img src="images/sp1.jpg" class="card-img-top rounded-top-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">AI features in SmartPhones</h5>
+                            <p class="card-text">
+                              5 phones you should get to generate AI wallpapers
+                              
+                              Android smartphones get even more customisable with AI-generated wallpapers.
+                              </p>
+                            <a href="https://indianexpress.com/article/technology/mobile-tabs/5-smartphones-with-ai-wallpapers-9283985/" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded-4 p-0">
+                    <div id="card2" class="card rounded-4 shadowbox">
+                        <img src="images/ca1.webp" class="card-img-top rounded-top-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">AI features in computers</h5>
+                            <p class="card-text">Snapdragon X Plus With a 10-core Oryon CPU, 45 TOPS Hexagon NPU for On-Device AI Launched that offer 37 percent faster performance.</p>
+                            <a href="https://www.gadgets360.com/laptops/news/snapdragon-x-plus-launch-specifications-features-5519712" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded-4 p-0">
+                    <div id="card3" class="card rounded-4 shadowbox">
+                        <img src="images/ag1.webp" class="card-img-top rounded-top-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">AI in Gaming</h5>
+                            <p class="card-text">Generative AI offers exciting new ways for video game developers to create engaging content, realistic visuals, and immersive gameplay experiences. </p>
+                            <a href="https://www.forbes.com/sites/bernardmarr/2024/04/18/the-role-of-generative-ai-in-video-game-development/?sh=38b85ae470f4" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded-4 p-0">
+                    <div id="card4" class="card rounded-4 shadowbox">
+                        <img src="images/e1.webp" class="card-img-top rounded-top-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Electronics</h5>
+                            <p class="card-text">
+                              Saudi Arabia is becoming a hot spot for global technology manufacturing with sustainable practices in mind. Here's how.
+                              
+                              Saudi Arabian company Alat is focusing on the use of clean energy and sustainable practices to become a leader in sustainable manufacturing.
+                              </p>
+                            <a href="https://www.businessinsider.com/sc/how-saudi-arabia-is-becoming-a-global-technology-manufacturing-center" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded-4 p-0">
+                    <div id="card5" class="card rounded-4 shadowbox">
+                        <img src="images/w1.avif" class="card-img-top rounded-top-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">AI in wearables</h5>
+                            <p class="card-text">
+                              4 ways your Wear OS watch already outperforms the Humane AI Pin
+                              
+                              Devices like the AI Pin might be the future. But today, they're no better than a smartwatch
+                              </p>
+                            <a href="https://www.androidpolice.com/humane-ai-pin-features-you-can-use-smartwatch/" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded-4 p-0">
+                    <div id="card6" class="card rounded-4 shadowbox">
+                        <img src="images/v1.webp" class="card-img-top rounded-top-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">AI in vehicles</h5>
+                            <p class="card-text">                              
+                              DARPA announced successful tests of its new autonomous vehicles on Wednesday, all part of the agency’s Robotic Autonomy in Complex Environments with Resiliency (RACER) program. And while the tests sound impressive, we found ourselves transfixed by one little …
+                              </p>
+                            <a href="https://gizmodo.com/darpa-new-12-ton-robot-tank-glowing-green-eyes-vehicle-1851432307" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- last card -->
+            <div id="lastcard" class="card text-center">
+              <div class="card-header">
+                  Premium Features
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">Technical Chromium</h5>
+                  <p class="card-text">Technical Chromium is your trusted source for the latest updates in technology, AI, and digital consumer products. We bring you timely and accurate news on smartphones, laptops, wearables, and software. Join us as we explore the future of tech together.</p>
+                  <a href="#" class="btn btn-primary">Join Us</a>
+              </div>
+              <div class="card-footer text-body-secondary">
+                  2 days ago
+              </div>
+          </div>
+          
+        </div>
+    </main>
+    <!-- Testimonials -->
+    <div class="feedback">
+        <h6>Testimonials</h6>
+        <div class="testimonial">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="height: 46vh;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                    <div class="card-body text-center">
+                      <img src="images/jayant.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
+                      <h5 class="card-title">Jayant Pratap Singh</h5>
+                      <p style="font-family: 'Times New Roman', Times, serif; font-weight: 200;">Student(B.Tech CSE),The Core University</p>
+                      <p class="card-text">Technical Chromium is a one-stop solution for all tech updates. The website is user-friendly and the information is presented in a clear and concise manner. The updates on AI and new tech are particularly helpful.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <!-- <a href="#" class="btn btn-primary">Button</a> -->
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                    <div class="card-body text-center">
+                      <img src="images/parag tayal.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
+                      <h5 class="card-title">Parag Tayal</h5>
+                      <p style="font-family: 'Times New Roman', Times, serif; font-weight: 200;">Student(B.Tech CSE),CEC CGC-Landran</p>
+                      <p class="card-text">As a student interested in the latest tech trends, Technical Chromium has been a great help. The website provides all the latest updates and news in one place. It's a great resource for students like me.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <!-- <a href="#" class="btn btn-primary">Button</a> -->
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                    <div class="card-body text-center">
+                      <img src="images/rohit.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
+                      <h5 class="card-title">Rohit Rana</h5>
+                      <p style="font-family: 'Times New Roman', Times, serif; font-weight: 200;">Fitness Enthusiasts</p>
+                      <p class="card-text">Technical Chromium has made it easy for me to stay updated with the latest in wearables. The website is easy to navigate and the content is well-organized. It's a great resource for anyone interested in wearable technology.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <!-- <a href="#" class="btn btn-primary">Button</a> -->
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item" >
+                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                    <div class="card-body text-center">
+                      <img src="images/sunder.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
+                      <h5 class="card-title">Thakur Sumit Kumar</h5>
+                      <p style="font-family: 'Times New Roman', Times, serif; font-weight: 200;">Gadget Lover</p>
+                      <p class="card-text">I was looking for a reliable source for the latest updates on smartphones and laptops, and Technical Chromium exceeded my expectations. The detailed reviews and updates are extremely helpful. I highly recommend Technical Chromium to all tech enthusiasts.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <!-- <a href="#" class="btn btn-primary">Button</a> -->
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                    <div class="card-body text-center">
+                      <img src="images/quamar.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
+                      <h5 class="card-title">Moh.Quamar Tyagi</h5>
+                      <p style="font-family: 'Times New Roman', Times, serif; font-weight: 200;">Software Developer</p>
+                      <p class="card-text">Technical Chromium has been my go-to for all software updates. The website is regularly updated and the information is accurate. It's a great platform for anyone interested in the latest tech trends.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <!-- <a href="#" class="btn btn-primary">Button</a> -->
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    <footer>
+        <div class="foot1"> 
+            <a><img src="images/Layer_2_(5)-transformed.png" height="55px" style="border-radius: 30px;border: 2px solid #2699d6;"></a>
+            <a href="">Technical Chromium</a>
+            <p style="width: 100vw; border: .5px solid #2574fc87;"></p>
+        </div>
+        <div class="foot2">
+        <span>All @copyright reserved</span><a>heerarana97352@gmail.com</a>
+        </div>
+        <div class="foot3 d-flex justify-content-center">
+            <a href=""><img src="images/icons8-youtube-94.png" height="35px">Youtube</a>
+            <a href=""><img src="images/icons8-instagram-94.png" height="35px">Instagram</a>
+            <a href=""><img src="images/icons8-twitterx-64.png" height="35px">TwitterX</a>
+            <a href=""><img src="images/icons8-whatsapp-94 (1).png" height="35px">WhatsApp</a>
+        </div>
+    </footer>
+    
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- contact and search modal -->
+<script src="js/index.js"></script>
+</body>
+</html>

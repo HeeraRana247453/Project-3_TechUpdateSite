@@ -1,0 +1,86 @@
+*{
+    scrollbar-width:thin;
+}
+nav {
+    background-image: linear-gradient(135deg, #8d2de26b 10%, #4b00e049 100%);
+}
+
+.profile {
+    margin: 0px 5rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border: .5px solid rgba(128, 128, 128, 0.278);
+    border-radius: 5px;
+}
+
+.profile p {
+    margin: 4.5px;
+}
+
+.profile:hover {
+    box-shadow: 1px 1px 4px 2px gray;
+}
+
+@media screen and (max-width:1218px) and (min-width:992px) {
+    .user {
+        display: none;
+    }
+
+    .profile {
+        display: flex;
+    }
+}
+
+#pillNav2 {
+    margin: 6rem 6rem 0rem 6rem;
+}
+
+@media screen and (max-width: 990px) {
+
+    /* for small and medium devices */
+    #pillNav2 {
+        margin: 6rem 1rem 0rem 1rem;
+        /* width: 80vw; */
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        /* white-space: nowrap; */
+        scrollbar-width: none;
+    }
+
+    #pillNav2 .nav-item {
+        display: inline-block;
+    }
+}
+
+/* Main */
+section {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.container {
+    width: 100vw;
+    margin: 4rem 0rem;
+    /* border: 1px solid green; */
+}
+
+.col{width: 19rem;}
+.card {
+    box-shadow: -5px -5px 12px 1px rgba(128, 128, 128, 0.747);
+    cursor: pointer;
+    /* border: 2px solid purple; */
+    /* margin: auto .2rem; */
+}
+
+.card:hover {
+    box-shadow: 0px 0px 12px 3px rgb(94, 94, 94);
+    transform: scale(1.15);
+    transition: transform 0.4s;
+}
