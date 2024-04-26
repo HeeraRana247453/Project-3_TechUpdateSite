@@ -1,6 +1,9 @@
 *{
     scrollbar-width:thin;
 }
+body{
+    background-color: whitesmoke;
+}
 nav {
     background-image: linear-gradient(135deg, #8d2de26b 10%, #4b00e049 100%);
 }
