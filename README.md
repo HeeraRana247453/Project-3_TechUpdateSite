@@ -19,8 +19,8 @@ Technical Chromium is a technology news website that provides the latest updates
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/techinnovate.git`
-2. Navigate to the project directory: `cd techinnovate`
+1. Clone the repository: `git clone https://github.com/HeeraRana247453/Project-3_TechUpdateSite.git`
+2. Navigate to the project directory: `index.html`
 3. Install the dependencies: `npm install`
 
 ## Usage
