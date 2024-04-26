@@ -470,11 +470,28 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <!-- small navigation -->
+        <ul class="nav nav-pills nav-fill gap-2 p-1 small  rounded-5 shadow-sm" id="pillNav2"
+    role="tablist"
+    style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white); background-image: linear-gradient(135deg, #8d2de2 50%, #4b00e0d6 100%); ">
+    <li class="nav-item" role="presentation"><a style="text-decoration: none;" href="newspage.html">
+        <button class="nav-link rounded-5" id="computers" onclick="onNavItemClick('computers')" data-bs-toggle="tab" type="button" role="tab"
+            aria-selected="false">Computers</button></a>
+    </li>
+    <li class="nav-item" role="presentation"><a style="text-decoration: none;" href="newspage3.html">
+      <button class="nav-link rounded-5" id="aitools" onclick="onNavItemClick('aitools')" data-bs-toggle="tab" type="button" role="tab"
+      aria-selected="false">AI Tools</button></a>
+    </li>
+    <li class="nav-item" role="presentation"><a style="text-decoration: none;" href="newspage2.html">
+        <button class="nav-link rounded-5" id="smartphones" onclick="onNavItemClick('smartphones')" data-bs-toggle="tab" type="button"
+            role="tab" aria-selected="true">SmartPhones</button></a>
+    </li>
+    </ul>
         <!-- cards -->
         <div class="first">
             <div id="carding" class="row row-cols-1 row-cols-md-2 g-1">
                 <div class="col rounded-4 p-0">
-                    <div id="card1" class="card rounded-4 p-0 shadowbox">
+                    <div id="card1" class="card rounded-4 h-100 p-0 shadowbox">
                         <img src="images/sp1.jpg" class="card-img-top rounded-top-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-primary">AI features in SmartPhones</h5>
@@ -488,7 +505,7 @@
                     </div>
                 </div>
                 <div class="col rounded-4 p-0">
-                    <div id="card2" class="card rounded-4 shadowbox">
+                    <div id="card2" class="card rounded-4 h-100 shadowbox">
                         <img src="images/ca1.webp" class="card-img-top rounded-top-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-danger">AI features in computers</h5>
@@ -498,7 +515,7 @@
                     </div>
                 </div>
                 <div class="col rounded-4 p-0">
-                    <div id="card3" class="card rounded-4 shadowbox">
+                    <div id="card3" class="card rounded-4 h-100 shadowbox">
                         <img src="images/ag1.webp" class="card-img-top rounded-top-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-success">AI in Gaming</h5>
@@ -508,7 +525,7 @@
                     </div>
                 </div>
                 <div class="col rounded-4 p-0">
-                    <div id="card4" class="card rounded-4 shadowbox">
+                    <div id="card4" class="card rounded-4 h-100 shadowbox">
                         <img src="images/e1.webp" class="card-img-top rounded-top-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-danger">Electronics</h5>
@@ -522,7 +539,7 @@
                     </div>
                 </div>
                 <div class="col rounded-4 p-0">
-                    <div id="card5" class="card rounded-4 shadowbox">
+                    <div id="card5" class="card rounded-4 h-100 shadowbox">
                         <img src="images/w1.avif" class="card-img-top rounded-top-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-primary">AI in wearables</h5>
@@ -536,7 +553,7 @@
                     </div>
                 </div>
                 <div class="col rounded-4 p-0">
-                    <div id="card6" class="card rounded-4 shadowbox">
+                    <div id="card6" class="card rounded-4 h-100 shadowbox">
                         <img src="images/v1.webp" class="card-img-top rounded-top-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-success">AI in vehicles</h5>
@@ -557,7 +574,7 @@
               <div class="card-body">
                   <h5 class="card-title">Technical Chromium</h5>
                   <p class="card-text">Technical Chromium is your trusted source for the latest updates in technology, AI, and digital consumer products. We bring you timely and accurate news on smartphones, laptops, wearables, and software. Join us as we explore the future of tech together.</p>
-                  <a href="#" class="btn btn-primary">Join Us</a>
+                  <a href="about.html" class="btn btn-primary">Read more</a>
               </div>
               <div class="card-footer text-body-secondary">
                   2 days ago
@@ -570,10 +587,10 @@
     <div class="feedback">
         <h6>Testimonials</h6>
         <div class="testimonial">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="height: 46vh;">
+        <div id="carouselExampleSlidesOnly" class="carousel slide my-0" data-bs-ride="carousel" style="height: 53vh;">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                <div class="card w-80 mb-3 border-0" style="height: 52vh; background-color: transparent;">
                     <div class="card-body text-center">
                       <img src="images/jayant.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
                       <h5 class="card-title">Jayant Pratap Singh</h5>
@@ -585,7 +602,7 @@
                   </div>
               </div>
               <div class="carousel-item">
-                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                <div class="card w-80 mb-3 border-0" style="height: 52vh; background-color: transparent;">
                     <div class="card-body text-center">
                       <img src="images/parag tayal.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
                       <h5 class="card-title">Parag Tayal</h5>
@@ -597,7 +614,7 @@
                   </div>
               </div>
               <div class="carousel-item">
-                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                <div class="card w-80 mb-3 border-0" style="height: 52vh; background-color: transparent;">
                     <div class="card-body text-center">
                       <img src="images/rohit.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
                       <h5 class="card-title">Rohit Rana</h5>
@@ -609,7 +626,7 @@
                   </div>
               </div>
               <div class="carousel-item" >
-                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                <div class="card w-80 mb-3 border-0" style="height: 52vh; background-color: transparent;">
                     <div class="card-body text-center">
                       <img src="images/sunder.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
                       <h5 class="card-title">Thakur Sumit Kumar</h5>
@@ -621,7 +638,7 @@
                   </div>
               </div>
               <div class="carousel-item">
-                <div class="card w-80 mb-3 border-0" style="height: 44vh; background-color: transparent;">
+                <div class="card w-80 mb-3 border-0" style="height: 52vh; background-color: transparent;">
                     <div class="card-body text-center">
                       <img src="images/quamar.jpg" height="100px" width="150px" style="border: 2px solid #2699d6; border-radius: 50%;" alt="">
                       <h5 class="card-title">Moh.Quamar Tyagi</h5>
